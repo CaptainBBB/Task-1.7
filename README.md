@@ -36,7 +36,7 @@ get_html(self) - возвращает сформированную HTML-стро
 
 Например, для поля login:
 
-\<p class='login'>Логин: /<input type='text' size=10 />
+\<p class='login'>Логин: \<input type='text' size=10 />
 
 Также классы TextInput и PasswordInput должны иметь метод класса (@classmethod):
 
