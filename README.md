@@ -52,6 +52,7 @@ raise ValueError("некорректное поле name")
 Для проверки допустимых символов в каждом классе должен быть прописан атрибут CHARS_CORRECT:
 
 CHARS = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя " + ascii_lowercase
+
 CHARS_CORRECT = CHARS + CHARS.upper() + digits
 
 По заданию нужно объявить только классы TextInput и PasswordInput с соответствующим функционалом. Более ничего.
