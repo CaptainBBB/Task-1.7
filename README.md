@@ -10,14 +10,17 @@ class FormLogin:
 
     def render_template(self):
         return "\n".join(['<form action="#">', self.login.get_html(), self.password.get_html(), '</form>'])
+        
 Который предполагается использовать следующим образом:
 
 login = FormLogin(TextInput("Логин"), PasswordInput("Пароль"))
 html = login.render_template()
+
 Необходимо прописать классы TextInput и PasswordInput, объекты которых формируются командами:
 
 login = TextInput(name, size)
 psw = PasswordInput(name, size)
+
 В каждом объекте этих классов должны быть следующие локальные свойства:
 
 name - название для поля (сохраняет передаваемое имя, например, "Логин" или "Пароль");
