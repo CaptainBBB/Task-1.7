@@ -14,11 +14,13 @@ class FormLogin:
 Который предполагается использовать следующим образом:
 
 login = FormLogin(TextInput("Логин"), PasswordInput("Пароль"))
+
 html = login.render_template()
 
 Необходимо прописать классы TextInput и PasswordInput, объекты которых формируются командами:
 
 login = TextInput(name, size)
+
 psw = PasswordInput(name, size)
 
 В каждом объекте этих классов должны быть следующие локальные свойства:
